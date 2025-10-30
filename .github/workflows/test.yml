@@ -67,7 +67,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
     
       - name: Tag and push images to Docker Hub
-        run: |
+        run: 
           docker tag 22663701_tranquangvinh:latest ${{ secrets.DOCKER_USERNAME }}/eproject-auth:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/eproject-auth:latest
           docker tag 22663701_tranquangvinh-product:latest ${{ secrets.DOCKER_USERNAME }}/eproject-product:latest
