@@ -68,13 +68,13 @@ jobs:
     
       - name: Tag and push images to Docker Hub
         run: |
-          docker tag 22653721-nguyenhoangkhanhduy-eproject-auth:latest ${{ secrets.DOCKER_USERNAME }}/eproject-auth:latest
+          docker tag 22663701_tranquangvinh:latest ${{ secrets.DOCKER_USERNAME }}/eproject-auth:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/eproject-auth:latest
-          docker tag 22653721-nguyenhoangkhanhduy-eproject-product:latest ${{ secrets.DOCKER_USERNAME }}/eproject-product:latest
+          docker tag 22663701_tranquangvinh-product:latest ${{ secrets.DOCKER_USERNAME }}/eproject-product:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/eproject-product:latest
-          docker tag 22653721-nguyenhoangkhanhduy-eproject-order:latest ${{ secrets.DOCKER_USERNAME }}/eproject-order:latest
+          docker tag 222663701_tranquangvinh-order:latest ${{ secrets.DOCKER_USERNAME }}/eproject-order:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/eproject-order:latest
-          docker tag 22653721-nguyenhoangkhanhduy-eproject-api-gateway:latest ${{ secrets.DOCKER_USERNAME }}/eproject-api-gateway:latest
+          docker tag 222663701_tranquangvinh-api-gateway:latest ${{ secrets.DOCKER_USERNAME }}/eproject-api-gateway:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/eproject-api-gateway:latest
     
 
