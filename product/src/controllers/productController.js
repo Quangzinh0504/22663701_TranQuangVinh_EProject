@@ -113,16 +113,19 @@ class ProductController {
 
 
 
-  // Chuc nag tim id san pham tren d
+//   // Chuc nag tim id san pham tren d
+// async getid(req, res){
+//     const product=await Product.findById(req.params.id);
+//     res.status(200).json(product);
+
+//   }
+
+
+
 async getid(req, res){
-    const product=await Product.findById(req.params.id);
-    res.status(200).json(product);
-
-  }
-
-
-
-
+  const product=await Product.findById(req.params.id);
+  res.status(200).json(product);
+}
 
 
 
