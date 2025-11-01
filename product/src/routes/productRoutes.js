@@ -12,10 +12,10 @@ router.get("/", isAuthenticated, productController.getProducts);
 
 /// chuc nang tim id theo san pham
 
+// router.get("/:id", isAuthenticated, productController.getid);
+
 router.get("/:id", isAuthenticated, productController.getid);
 
-
-// router.get("/:id", isAuthenticated, productController.getID);
 
 
 module.exports = router;
